@@ -1,0 +1,49 @@
+# Desafio de Projeto Python - Sistema Bancário
+
+### Regras de Negócio do Sistema Bancário
+
+- O sistema deverá implementar as seguintes funcionalidades adicionais:
+  - O limite de saque deverá ser de R$ 500,00
+  - O limite de oprações de saque deverá ser de 3 por dia
+  - O limite de operações totais (saque e depósito) deverá ser de 10 por dia
+  - As operações saque, depósito e extrado deverão ser separadas em funções
+    - A função `saque` deverá receber o valor do saque e retornar o saldo disponível
+      - O sistema deverá permitir saques apenas de valores positivos
+      - A chamada da função `saque` deverá ser feita utilizando passagem de argumentos apenas por posição
+    - A função `deposito` deverá receber o valor do depósito e retornar o saldo disponível
+      - O sistema deverá permitir depósitos apenas de valores positivos
+      - A chamada da função `deposito` deverá ser feita utilizando passagem de argumentos apenas por nome
+    - A função `extrato` deverá exibir o extrato com todas as operações de depósito e saque
+      - As operações de depósito deverão ser exibidas com um simbolo de `+` antes do valor
+      - As operações de saque deverão ser exibidas com um simbolo de `-` antes do valor
+      - Todas as operações deverão ser listadas em ordem cronológica, com a data e hora da operação
+      - A chamada da função `extrato` deverá ser feita utilizando passagem de argumentos por posição e por nome
+- Duas novas operações deverão ser implementadas:
+  - Cadastrar usuário
+    - O sistema deverá permitir o cadastro de um usuário com nome, data de nascimento, CPF e endereço
+      - O endereco deverá ser uma string no formato `Logradouro, Número - Bairro - Cidade/Estado`
+      - O CPF deverá ser armazenado em uma string contendo apenas números
+    - Não deverá ser permitido o cadastro de usuários com CPF duplicado
+    - Os usuários deverão ser armazenados em uma lista
+  - Cadastrar uma conta corrente para o usuário
+    - As contas correntes deverão ser armazenadas em uma lista
+      - Cada conta corrente deverá conter um número de conta, agência e usuário
+    - O número da conta deverá ser gerado automaticamente e ser único, iniciando em `0001`
+    - O número da agência deverá ser `0001`
+    - Cada usuário poderá ter mais de uma conta corrente
+    - Cada conta corrente pode pertencer à apenas um usuário
+- Extras:
+  - Implementar uma lista de usuários cadastrados
+    - Implementar uma função para buscar um usuário pelo CPF
+    - Implementar uma função para cancelar uma conta corrente
+    - Implementar uma função para excluir um usuário, ao excluir um usuário todas as suas contas correntes deverão ser canceladas
+  - Implementar uma lista de contas correntes cadastradas
+    - Implementar uma função para buscar uma conta corrente pelo número da conta
+  - Implementar uma função para transferir valores entre contas correntes
+    - A função deverá receber o número da conta de origem, o número da conta de destino e o valor a ser transferido
+    - A função deverá retornar o saldo disponível na conta de origem
+    - A função deverá exibir uma mensagem de erro caso a conta de origem não tenha saldo suficiente
+    - A função deverá exibir uma mensagem de erro caso a conta de destino não exista
+    - A função deverá exibir uma mensagem de erro caso a conta de origem e a conta de destino sejam a mesma
+    - A função deverá exibir uma mensagem de erro caso o valor a ser transferido seja negativo
+    - A função deverá exibir uma mensagem de erro caso o valor a ser transferido seja zero
