@@ -33,12 +33,12 @@
     - Cada usuário poderá ter mais de uma conta corrente
     - Cada conta corrente pode pertencer à apenas um usuário
 - Extras:
-  - Implementar uma lista de usuários cadastrados
-    - Implementar uma função para buscar um usuário pelo CPF
-    - Implementar uma função para cancelar uma conta corrente
-    - Implementar uma função para excluir um usuário, ao excluir um usuário todas as suas contas correntes deverão ser canceladas
-  - Implementar uma lista de contas correntes cadastradas
-    - Implementar uma função para buscar uma conta corrente pelo número da conta
+  - **&#x2611;** Implementar uma lista de usuários cadastrados
+    - **&#x2611;** Implementar uma função para buscar um usuário pelo CPF
+    - **&#x2611;** Implementar uma função para cancelar uma conta corrente
+    - **&#x2611;** Implementar uma função para excluir um usuário, ao excluir um usuário todas as suas contas correntes deverão ser canceladas
+  - **&#x2611;** Implementar uma lista de contas correntes cadastradas
+    - **&#x2611;** Implementar uma função para buscar uma conta corrente pelo número da conta
   - Implementar uma função para transferir valores entre contas correntes
     - A função deverá receber o número da conta de origem, o número da conta de destino e o valor a ser transferido
     - A função deverá retornar o saldo disponível na conta de origem
